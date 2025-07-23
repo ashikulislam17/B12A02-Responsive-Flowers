@@ -3,27 +3,128 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Serif", serif;
+  background-color: #f2f7ff;
+}
+
+/* img {
+  max-width: 100%;
+} */
+
+/* Common Container */
+.container {
+  max-width: 1140px;
+  margin: auto;
 }
 
 /* Nav Styles */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1140px;
-    margin: 50px auto;
-    border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1140px;
+  margin: 20px auto; */
+  /* border: 1px solid black; */
 }
 
+/* nav img {
+    border-radius: 50%;
+} */
+
 nav ul {
-    display: flex;
+  display: flex;
 }
 
 nav ul li {
-    list-style: none;
-    margin-left: 50px;
+  list-style: none;
+  margin-left: 50px;
 }
 
 nav ul li a {
-    text-decoration: none;
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 1rem;
+}
+
+.nav-home {
+  color: #252432;
+  font-weight: 700;
+}
+
+.nav-grey {
+  color: #6b7280;
+}
+
+.nav-cart {
+  color: #000000;
+}
+
+/* Banner Styles */
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1140px; */
+  margin: 70px auto;
+  /* border: 1px solid black; */
+}
+
+.banner-container .banner-content {
+  /* border: 1px solid blue; */
+  margin-top: 50px;
+}
+
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.banner-title span {
+  color: #e95a08;
+}
+
+.banner-description {
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* .banner-image {
+  flex: 1;
+} */
+
+.banner-image {
+  width: 100%;
+}
+
+.banner-image img {
+  display: block;
+}
+
+/* Mobile Device */
+@media screen and (max-width: 576px) {
+  .container {
+    margin: 0 10px;
+  }
+
+  nav ul li:nth-child(1),
+  nav ul li:nth-child(2),
+  nav ul li:nth-child(3) {
+    display: none;
+  }
+
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+
+  .banner-image img {
+    width: 100%;
+    /* flex: 1; */
+  }
+
+  .banner-content {
+    padding-left: 20px;
+    /* padding-right: 10px; */
+  }
 }
