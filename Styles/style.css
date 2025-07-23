@@ -79,11 +79,13 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
-.banner-title span {
+.banner-title span,
+.second-banner h3 span {
   color: #e95a08;
 }
 
-.banner-description {
+.banner-description,
+.second-banner-description {
   font-family: Inter;
   font-size: 1.4rem;
   font-weight: 400;
@@ -102,7 +104,83 @@ nav ul li a {
   display: block;
 }
 
-/* Mobile Device */
+/* Second Banner */
+.second-banner {
+  /* border: 1px solid black; */
+  margin-bottom: 150px;
+}
+
+.second-banner-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.second-banner-title {
+  font-size: 3.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.second-banner-description {
+  margin-bottom: 50px;
+  /* padding-left: 20px; */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+  /* border: 1px solid black; */
+}
+
+.card {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.flower-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: Inter;
+  color: rgb(17, 17, 17);
+  margin-bottom: 20px;
+}
+
+.flower-price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: Inter;
+  color: rgb(17, 17, 17);
+  margin-bottom: 36px;
+}
+
+/* Button Style */
+
+.primary-button {
+  background-color: rgb(233, 90, 8);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Inter;
+  color: white;
+  padding: 26px 50px;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Media Query (Mobile Device) */
 @media screen and (max-width: 576px) {
   .container {
     margin: 0 10px;
@@ -126,5 +204,14 @@ nav ul li a {
   .banner-content {
     padding-left: 20px;
     /* padding-right: 10px; */
+  }
+
+  .second-banner-content {
+    padding: 0 8px;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 7.5px;
   }
 }
