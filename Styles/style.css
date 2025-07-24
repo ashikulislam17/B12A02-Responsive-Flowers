@@ -271,4 +271,19 @@ nav ul li a {
     font-size: 0.8rem;
     width: 100%;
   }
+
+  .third-banner {
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 18px;
+  }
+
+  .badge {
+    display: none;
+  }
+
+  /* .third-banner-content h2 {
+    font-size: 1.5rem
+  } */
+
 }
