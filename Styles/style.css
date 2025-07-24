@@ -436,10 +436,6 @@ button:hover {
     margin-left: 15px;
   }
 
-  .banner-content {
-    /* padding-left: 10px; */
-  }
-
   /* Banner 2 */
   .second-banner-content {
     padding: 0 8px;
@@ -520,7 +516,7 @@ button:hover {
 
   /* Banner 5 */
   .fifth-banner {
-    margin-top: 400px;
+    margin-top: 300px;
     /* width: 100vw; */
     /* height: 393px; */
     width: 100%;
