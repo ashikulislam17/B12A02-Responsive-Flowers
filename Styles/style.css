@@ -107,7 +107,8 @@ nav ul li a {
 /* Second Banner */
 .second-banner {
   /* border: 1px solid black; */
-  margin-bottom: 150px;
+  margin-top: 150px;
+  margin-bottom: 200px;
 }
 
 .second-banner-content {
@@ -178,6 +179,56 @@ nav ul li a {
   display: block;
   width: 100%;
   cursor: pointer;
+}
+
+/* Third Banner */
+.third-banner {
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 100px;
+  margin-bottom: 150px;
+}
+
+.third-banner-image {
+  position: relative;
+  flex: 1;
+}
+
+.third-banner-image img:first-child {
+  width: 100%;
+  display: block;
+}
+
+.badge {
+  background-color: transparent;
+  position: absolute;
+  top: -120px;
+  right: -100px;
+  width: 250px;
+}
+
+.third-banner-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.third-banner-content h2 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.third-banner-content ul {
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  list-style-type: disc;
 }
 
 /* Media Query (Mobile Device) */
