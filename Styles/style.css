@@ -249,38 +249,84 @@ nav ul li a {
   margin-bottom: 100px;
 }
 
-.fourth-banner-img-container {
-  display: flex;
+.image-container {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr) 2fr;
+  max-width: 1140px;
   gap: 30px;
+  width: 100%;
+  height: 430px;
 }
 
-.left-side-img {
+.left-container {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
   width: 100%;
+}
+
+.right-container {
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
-  gap: 30px;
-}
-
-/* .image-container img {
-      display: block;
-      border-radius: 10px;
-    } CGPT */
-
-.left-side-img img {
-  width: 100%;
-  display: block;
-  border-radius: 15px;
-  flex: 1;
-}
-
-.right-side-img {
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
-  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/deal-zabo.png") no-repeat center center/cover;
 }
 
-/* .left-side-img img, .right-side-img img {
-  background: rgba(0, 0, 0, 0.4);
-} */
+.first-bg-img {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/deal-bloom.png") no-repeat center center/cover;
+}
+
+.second-bg-img {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/deal-ana.png") no-repeat center center/cover;
+}
+
+.first-bg-img h3,
+.second-bg-img h3,
+.right-container h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: white;
+}
+
+.right-container h3 {
+  font-size: 2.5rem;
+}
+
+.first-bg-img a,
+.second-bg-img a,
+.right-container a {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: transparent;
+  color: white;
+}
+
+.right-container a {
+  font-size: 1.6rem;
+}
 
 /* Media Query (Mobile Device) */
 @media screen and (max-width: 576px) {
@@ -345,13 +391,36 @@ nav ul li a {
     margin-bottom: 120px;
   }
 
-  .fourth-banner-img-container {
-    flex-direction: column;
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
     gap: 10px;
   }
 
-  .left-side-img {
-    flex-direction: column;
+  .left-container {
     gap: 10px;
+  }
+
+  .first-bg-img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .second-bg-img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .right-container {
+    width: 100%;
+    height: 300px;
+  }
+
+  .right-container h3 {
+    font-size: 1.25rem;
+  }
+  .right-container a {
+    font-size: 1rem;
   }
 }
