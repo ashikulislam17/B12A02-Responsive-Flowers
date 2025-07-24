@@ -364,7 +364,8 @@ nav ul li a {
 
   .card-container {
     grid-template-columns: repeat(2, 1fr);
-    /* padding-left: 7.5px; */
+    column-gap: 10px;
+    row-gap: 20px;
   }
 
   .primary-button {
