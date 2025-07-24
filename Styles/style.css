@@ -6,10 +6,6 @@
   background-color: #f2f7ff;
 }
 
-/* img {
-  max-width: 100%;
-} */
-
 /* Common Container */
 .container {
   max-width: 1140px;
@@ -63,13 +59,11 @@ nav img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* max-width: 1140px; */
   margin: 70px auto;
   /* border: 1px solid black; */
 }
 
 .banner-container .banner-content {
-  /* border: 1px solid blue; */
   margin-top: 50px;
 }
 
@@ -87,16 +81,13 @@ nav img {
 
 .banner-description,
 .second-banner-description,
-.fourth-banner p {
+.fourth-banner p,
+.footer-left p {
   font-family: Inter;
   font-size: 1.4rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
 }
-
-/* .banner-image {
-  flex: 1;
-} */
 
 .banner-image {
   width: 100%;
@@ -128,7 +119,6 @@ nav img {
 
 .second-banner-description {
   margin-bottom: 50px;
-  /* padding-left: 20px; */
 }
 
 .card-container {
@@ -169,7 +159,6 @@ nav img {
 }
 
 /* Button Style */
-
 .primary-button {
   background-color: rgb(233, 90, 8);
   font-size: 1rem;
@@ -224,14 +213,17 @@ nav img {
   margin-bottom: 20px;
 }
 
-.third-banner-content ul li {
+.third-banner-content ul {
   padding-left: 20px;
   color: rgba(0, 0, 0, 0.5);
-  font-family: Inter;
   font-size: 1.2rem;
   line-height: 1.6;
   font-weight: 400;
   list-style-type: disc;
+}
+
+.third-banner-content ul li {
+  font-family: Inter;
 }
 
 /* Fourth Banner */
@@ -332,9 +324,8 @@ nav img {
 .fifth-banner {
   background: url("../assets/news-letter-bg.png") no-repeat center center/cover;
   width: 100%;
-  /* height: 570px; */
   height: 80vh;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -351,11 +342,9 @@ nav img {
 
 .input-field {
   display: flex;
-  /* max-width: 900px; */
   max-width: 60vw;
   width: 100%;
   margin: 0 auto;
-  /* overflow: hidden; */
 }
 
 .email-input {
@@ -375,14 +364,56 @@ nav img {
   border: none;
   cursor: pointer;
   width: 186px;
-  /* width: 12vw; */
+}
+
+/* Footer Section */
+.footer-container {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer-left img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  transform: translate(-30px, -35px);
+  /* border: 1px solid black; */
+}
+
+.footer-middle {
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 150px;
+}
+
+.middle-1 a,
+.middle-2 a {
+  display: block;
+  line-height: 4;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.footer-image-container {
+  display: flex;
+  gap: 35px;
+}
+
+.twitter-image {
+  width: 36px;
+  height: 36px;
 }
 
 /* Media Query (Mobile Device) */
 @media screen and (max-width: 576px) {
   /* All */
   .container {
-    margin: 0 10px;
+    margin: 0 15px;
   }
 
   /* Nav Bar */
@@ -399,13 +430,11 @@ nav img {
 
   .banner-image img {
     width: 100%;
-    /* flex: 1; */
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   .banner-content {
     padding-left: 10px;
-    /* padding-right: 10px; */
   }
 
   /* Banner 2 */
@@ -415,8 +444,12 @@ nav img {
 
   .card-container {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
-    row-gap: 20px;
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+
+  .flower-price {
+    margin-bottom: 20px;
   }
 
   .primary-button {
@@ -429,7 +462,7 @@ nav img {
   .third-banner {
     flex-direction: column;
     margin-top: 60px;
-    gap: 18px;
+    gap: 23px;
   }
 
   .badge {
@@ -437,10 +470,13 @@ nav img {
   }
 
   /* Banner 4 */
-
   .fourth-banner {
     margin-top: 120px;
     margin-bottom: 120px;
+  }
+
+  .fourth-banner p {
+    margin-bottom: 50px;
   }
 
   .image-container {
@@ -451,7 +487,7 @@ nav img {
   }
 
   .left-container {
-    gap: 10px;
+    gap: 15px;
   }
 
   .first-bg-img {
@@ -479,18 +515,39 @@ nav img {
   /* Banner 5 */
   .fifth-banner {
     margin-top: 550px;
-    width: 100%;
+    /* width: 100vw; */
     /* height: 393px; */
-    height: 50vh;
-    /* background-image: 100%; */
+    width: 100%;
+    height: 40vh;
   }
 
   .fifth-banner h2 {
     font-size: 1.75rem;
   }
 
-  /* .input-field {
-    width: 450px;
-    height: 50px;
-  } */
+  .input-field {
+    /* width: 450px;
+    height: 50px; */
+    justify-content: center;
+  }
+
+  .subscribe-btn {
+    width: 150px;
+    padding: 15px 15px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .no-break-line {
+    display: none;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 20px;
+  }
 }
